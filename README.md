@@ -9,10 +9,6 @@ This repository includes:
 Getting Started
 Clone the repository and explore the projects:
 
-bash:
-git clone https://github.com/yourusername/embedded-c-projects.git
-cd embedded-c-projects
-
 Contributions
 Suggestions and feedback are welcome! Feel free to open an issue or submit a pull request.
 
