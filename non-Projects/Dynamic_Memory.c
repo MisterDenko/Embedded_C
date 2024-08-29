@@ -23,6 +23,7 @@ int main() {
         printf("Memory allocation failed!\n");
         return 1;
     }
+    /*------------------------------------------*/
 
     // Initializing and printing the elements of the array
     printf("Using malloc, elements of the array:\n");
@@ -31,6 +32,7 @@ int main() {
         printf("%d ", arr[i]);
     }
     printf("\n");
+    /*------------------------------------------*/
 
     // Using calloc to allocate memory for an array of n integers
     int *arr_calloc = (int*) calloc(n, sizeof(int));
@@ -39,6 +41,7 @@ int main() {
         printf("Memory allocation failed!\n");
         return 1;
     }
+    /*------------------------------------------*/
 
     // Printing elements of the array initialized by calloc (should be 0)
     printf("Using calloc, elements of the array:\n");
@@ -46,6 +49,7 @@ int main() {
         printf("%d ", arr_calloc[i]);
     }
     printf("\n");
+    /*------------------------------------------*/
 
     // Using realloc to resize the original array to a larger size
     printf("Enter the new number of elements (larger than before): ");
@@ -57,6 +61,7 @@ int main() {
         printf("Memory reallocation failed!\n");
         return 1;
     }
+    /*------------------------------------------*/
 
     // Initializing new elements and printing the array
     printf("After realloc, elements of the array:\n");
@@ -67,12 +72,14 @@ int main() {
         printf("%d ", arr[i]);
     }
     printf("\n");
+    /*------------------------------------------*/
 
     // Freeing allocated memory
     free(arr);
     free(arr_calloc);
 
     printf("Memory has been freed.\n");
+    /*------------------------------------------*/
 
     return 0;
 }
